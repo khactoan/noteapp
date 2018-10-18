@@ -24,4 +24,5 @@ Things you may want to cover:
 * ...
 
 Run project: docker-compose up
+
 Connect db cli: sudo docker exec -it noteapp_db_1 bash
