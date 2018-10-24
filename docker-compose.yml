@@ -12,7 +12,7 @@ services:
       - "3307:3306"
   app:
     build: .
-    command: bundle exec rails s -p 3000 -b "0.0.0.0"
+    # command: bundle exec rails s -p 3000 -b "0.0.0.0"
     volumes:
       - ".:/noteapp"
     ports:
@@ -21,6 +21,7 @@ services:
       - db
     links:
       - db
+    tty: true
     environment:
       DB_USER: root
       DB_NAME: noteapp
